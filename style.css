@@ -1,14 +1,19 @@
 body { 
+    background-image: url(Images/Background.jpg);
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+header{
+    text-align: center;
+}
 .rectangle {
     width: 100vw; /* vw significa que va a ocupar el 100% del ancho de la pantalla */
     height: 100px;
     background-color: rgb(183, 244, 255);
+    border: solid 5px black;
     border-radius: 20px;
     display: flex;/* Permite alinear elementos internos */
     justify-content: center; /* Se alinea en el centro del contenedor horizontalmente */
@@ -22,18 +27,24 @@ body {
 }
 .imp_titles{
     text-align: center;
+    color:#f4f4f4;
 }
 .code-container{
-    width: 80%;
-    height: 200px;
-    border: 5px solid black;
-    margin-top: 20px;
+    width: 50%;
+    height: 500px;
+    border: 10px solid black;
+    margin: auto !important; /* Important prioriza la propiedad por otras */
+    margin-top: 20px !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: monospace;
     background-color: #f4f4f4;
     padding: 30px;
     white-space: pre-wrap;
     text-align: center;
+}
+
+.text-container{
+    text-align: center;
+    color: #f4f4f4;
 }
