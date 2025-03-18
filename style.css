@@ -10,9 +10,10 @@ header{
     text-align: center;
 }
 .rectangle {
+    font-family: "Big Shoulders Inline", sans-serif;
     width: 100vw; /* vw significa que va a ocupar el 100% del ancho de la pantalla */
     height: 100px;
-    background-color: rgb(183, 244, 255);
+    background-color: rgb(132, 237, 255);
     border: solid 5px black;
     border-radius: 20px;
     display: flex;/* Permite alinear elementos internos */
@@ -26,10 +27,14 @@ header{
     font-size: 20px;
 }
 .imp_titles{
+    font-family: "Big Shoulders Inline", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     text-align: center;
     color:#f4f4f4;
 }
 .code-container{
+    font-family: "Big Shoulders Inline", sans-serif;
     width: 50%;
     height: 500px;
     border: 10px solid black;
