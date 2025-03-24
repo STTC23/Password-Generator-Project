@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <!-- Program Size -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <!-- CEO -->
@@ -19,7 +23,7 @@
     <meta property="og:image" content="Images/RoboStrawberry.png">
     <meta property="og:image:alt" content="">
 
-    <title>Generador de contraseñas</title>
+    <title>Generador de contraseñas y Encriptador</title>
 </head>
 
 <body>
@@ -30,8 +34,16 @@
             <h3 class="imp_titles"> Por Juan Bedoya, Daniel Sabogal y Santiago Torres </h3>
             <p class="text-container"> Este proyecto tiene como objetivo, el enseñar intituivamente un generador de
                 contraseñas. </p>
-            <div class="code-container"> Aquí va el programa en Python</div>
-            <py> </py>
+            <div class="password-generator">
+                <p id="output"> <!-- Llamado a la variable de JavaScript-->
+                    <span class="mensaje"></span>
+                    <span class="clave"></span>
+                </p>
+                <button class="generate-btn" onclick="generarContraseña()">Generar una nueva contraseña</button>
+            </div>
+                <script src="contraseñas.js"></script> <!-- Se inserta el archivo en JavaScript-->
+            <h1 class="imp_titles"> Encriptador de Contraseñas</h1>
+            <div class="code-encryptor"> Aquí va el Encriptador</div>
             <div class="rectangle"> Lógica de Programación I </div>
         </header>
     </main>

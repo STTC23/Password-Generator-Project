@@ -1,8 +1,9 @@
 body { 
     background-image: url(Images/Background.jpg);
+    background-size: 200vw;
     margin: 0;
     padding: 0;
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: center;
 }
@@ -33,7 +34,35 @@ header{
     text-align: center;
     color:#f4f4f4;
 }
-.code-container{
+
+.password-generator {
+    display: flex;
+    flex-direction: column; /* en columna */
+    align-items: center; /* centrar horizontal */
+    justify-content: center; /* centrar vertical */
+    padding: 20px;
+    background: #000000;
+    border: 5px solid #000;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: center;
+    gap: 15px; /* espacio entre p y button */
+}
+.generate-btn{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #5bf4ff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: black solid;
+}
+
+.code-encryptor{
     font-family: "Big Shoulders Inline", sans-serif;
     width: 50%;
     height: 500px;
@@ -53,3 +82,24 @@ header{
     text-align: center;
     color: #f4f4f4;
 }
+
+/* JavaScript */
+/* Estilo para la frase */
+.mensaje {
+    flex-direction: column; /* para que todo quede en columna */
+    align-items: center; /* centra horizontalmente */
+    justify-content: center; /* centra verticalmente si necesitas */
+    font-weight: bold;
+    color: #74ccff;
+    font-size: 2.1em;
+    text-align: center;
+}
+
+/* Estilo para la contraseña */
+.clave {
+    color: #75efff;
+    font-family: monospace;
+    font-size: 2.2em;
+    margin-left: 5px;
+}
+
